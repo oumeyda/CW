@@ -13,9 +13,7 @@ urlpatterns = [
     path('cls/products/create/', CreateProductView.as_view()),
     path('cls/products/update/<int:id>/', UpdateProductView.as_view()),
     path('cls/products/delete/<int:id>/', DeleteProductView.as_view()),
-]
 
-urlpatterns = [
     path('publications/', ProductViewSet.as_view(
         {'get': 'list',
          'post': 'create'}
